@@ -53,7 +53,7 @@ After that, if you run `npm run dev` again, all checks should pass and you shoul
 
 ### Step 4: Testing your app
 
-Once the initial configuration is done, you can test your application by navigating to your test subreddit, clicking the three dots icon on the top-right and creating a new post. The command will be called `[Bolt Word Guesser] New Post`. Once you create a new post you can go back and forth with Bolt by prompting your way to making your app and testing it on Reddit.
+Once the initial configuration is done, you can test your application by navigating to your test subreddit, clicking the three dots icon on the top-right. The command will be called `[Bolt Word Guesser] New Post`. Once you create a new post you can go back and forth with Bolt by prompting your way to making your app and testing it on Reddit.
 
 Now vibe code away!
 
