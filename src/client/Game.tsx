@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Keyboard } from './Keyboard';
 import { LetterState, CheckResponse } from '../shared/types/game';
 import packageJson from '../../package.json';
+import SuperSnoo from './assets/flyingSnoo.png';
 
 const WORD_LENGTH = 5;
 const MAX_GUESSES = 6;
@@ -283,8 +284,10 @@ export const Game: React.FC = () => {
           {grid && <pre className="text-xs whitespace-pre-wrap">{grid}</pre>}
         </div>
       )}
-      <header className="w-full max-w-md px-2">
+      <header className="w-full max-w-md px-2 flex items-center justify-center gap-2">
+        <img src={SuperSnoo} alt="Super Snoo" className="w-8 h-8" />
         <h1 className="text-4xl font-bold tracking-wider my-2">Word Guesser</h1>
+        <img src={SuperSnoo} alt="Super Snoo" className="w-8 h-8" />
       </header>
 
       <div id="board" className="mb-4">
