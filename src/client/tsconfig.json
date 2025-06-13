@@ -4,12 +4,12 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2023", "esnext.disposable"],
 
-    "outDir": "../../dist/client",
+    "outDir": "../../dist/types/client",
 
     // React
     "jsx": "react-jsx",
 
-    "tsBuildInfoFile": "../../dist/client/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "../../dist/types/client/tsconfig.tsbuildinfo"
   },
   // https://github.com/Microsoft/TypeScript/issues/25636
   "include": ["**/*", "**/*.json", "../../package.json"],

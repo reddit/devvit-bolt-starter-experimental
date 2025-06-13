@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "YOUR_APP_NAME",
+  "post": {
+    "client": {
+      "dir": "dist/client",
+      "entry": "dist/client/index.html"
+    },
+    "create": {
+      "onInstall": false,
+      "menu": {
+        "label": "[Bolt] Word Guesser"
+      }
+    }
+  },
+  "server": {
+    "entry": "dist/server/index.cjs"
+  },
+  "media": {},
+  "blocks": {
+    "entry": "src/devvit/main.tsx"
+  }
+}

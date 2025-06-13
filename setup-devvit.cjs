@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const { execSync, exec } = require('child_process');
 const os = require('os');
-const yaml = require('yaml');
 
 function generateRandomSuffix(length) {
   const letters = 'abcdefghijklmnopqrstuvwxyz';
@@ -15,14 +14,14 @@ function generateRandomSuffix(length) {
 }
 
 function updateDevvitName() {
-  const devvitYamlPath = path.join(process.cwd(), 'devvit.yaml');
-  const content = fs.readFileSync(devvitYamlPath, 'utf8');
-  const parsedYaml = yaml.parse(content);
+  const devvitJsonPath = path.join(process.cwd(), 'devvit.json');
+  const content = fs.readFileSync(devvitJsonPath, 'utf8');
+  const parsedJson = JSON.parse(content);
 
-  if (parsedYaml.name === 'YOUR_APP_NAME') {
+  if (parsedJson.name === 'YOUR_APP_NAME') {
     const suffix = generateRandomSuffix(6);
-    parsedYaml.name = `bolt-${suffix}`;
-    fs.writeFileSync(devvitYamlPath, yaml.stringify(parsedYaml));
+    parsedJson.name = `bolt-${suffix}`;
+    fs.writeFileSync(devvitJsonPath, JSON.stringify(parsedJson, null, 2));
     console.log(`Updated app name to bolt-${suffix}`);
   }
 }
@@ -79,7 +78,7 @@ async function runChecks() {
 
 async function main() {
   try {
-    // Step 1: Update devvit.yaml name
+    // Step 1: Update devvit.json name
     updateDevvitName();
 
     // Step 2: Run checks

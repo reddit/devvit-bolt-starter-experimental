@@ -4,9 +4,9 @@
   "compilerOptions": {
     "lib": ["WebWorker", "ES2023"],
 
-    "outDir": "../../dist/shared",
+    "outDir": "../../dist/types/shared",
 
-    "tsBuildInfoFile": "../../dist/shared/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "../../dist/types/shared/tsconfig.tsbuildinfo"
   },
   // https://github.com/Microsoft/TypeScript/issues/25636
   "include": ["**/*", "**/*.json"],
