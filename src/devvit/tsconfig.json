@@ -8,9 +8,9 @@
 
     "rootDir": "..",
 
-    "outDir": "../../dist",
+    "outDir": "../../dist/types/devvit",
 
-    "tsBuildInfoFile": "../../dist/tsconfig.tsbuildinfo",
+    "tsBuildInfoFile": "../../dist/types/devvit/tsconfig.tsbuildinfo",
 
     // Devvit.
     "jsx": "react",

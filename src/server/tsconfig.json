@@ -8,9 +8,9 @@
 
     "rootDir": ".",
 
-    "outDir": "../../dist",
+    "outDir": "../../dist/types/server",
 
-    "tsBuildInfoFile": "../../dist/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "../../dist/types/server/tsconfig.tsbuildinfo"
   },
   // https://github.com/Microsoft/TypeScript/issues/25636
   "include": ["**/*", "**/*.json", "../../package.json"],
