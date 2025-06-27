@@ -1,5 +1,11 @@
+import { BoltBadge } from './BoltBadge';
 import { Game } from './Game';
 
 export const App = () => {
-  return <Game />;
+  return (
+    <>
+      <Game />
+      <BoltBadge mode="white" />
+    </>
+  );
 };
