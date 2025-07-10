@@ -1,7 +1,10 @@
-// TypeScript config for all webview main thread code.
+// TypeScript config for all web view main thread code.
 {
   "extends": "../../tools/tsconfig-base.json",
   "compilerOptions": {
+    // Target the browser.
+    "customConditions": ["browser"],
+
     "lib": ["DOM", "ES2023", "esnext.disposable"],
 
     "outDir": "../../dist/client",
